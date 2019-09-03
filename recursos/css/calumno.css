@@ -1,0 +1,169 @@
+.tit{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+body{
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.contenedor_al{
+    width: 100%;
+    height: 550px;
+    display: block;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+.contenedor_al::-webkit-scrollbar{
+    width: 7px;
+}
+
+.contenedor_al::-webkit-scrollbar-thumb{
+    background: rgba(25, 130, 232, 0.58);
+    border-radius: 10px;
+    border-right: 2px solid #fff;
+}
+
+.menu_al{
+    display: block; /*alinea*/
+    width: 600px;
+    margin: auto;
+    padding: 10px; /*espacio*/
+}
+
+.nav_al{
+    display: flex; /*cajas flexibls*/
+    justify-content: flex-end; /*se arrojan al final*/
+    list-style: none;
+    padding: 10px;
+}
+  
+.nav_al_item{
+    margin-right: 10px;
+}
+  
+.nav_al_item.agregar{/*colocamos el boton a la derecha */
+    margin-left: auto;
+}
+  
+.nav_al_item a{
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    background: #0e5b88;
+    text-decoration: none;
+}
+
+.nav_al_item a:hover{
+    background: #fff;
+    color: #000000;
+}
+
+.serch_bar{
+    margin-top: -5px;
+    margin-right: 10px;
+}
+input{
+    padding: 5px;
+}
+
+table{
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+table th{
+    background: #156268;
+    color: #fff;
+    padding: 13px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table tr:hover{
+    background: #4891bb;
+}
+
+table td:hover{
+    background: #0c2533;
+    color: #fff;
+}
+
+.columnaEE{
+    background: #a3dbdf;
+    padding: 0px;
+}
+.botones_tabla{
+    border: none;
+    padding: 0;
+    height: 30px;
+    width: auto;
+}
+
+/*clase registro alumnos*/
+
+.contenedor_al_2{
+    margin-bottom: 100px;
+}
+
+form{
+    width: 550px;
+    height: 450px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background: #0a41a786;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.inputext_al{
+    width: 100%;/*ocupa el porcentaje del contenedor*/
+    padding: 10px;
+    margin-bottom: 15px;/*margen hacia abajo para evitar que esten juntos*/
+    border-radius: 5px;
+}
+
+.inputext_al:focus{
+    border: 2px solid #000000;
+}
+
+.inputext_al_num{
+    font-size: 18px;
+}
+
+.inputext_al_num_2{
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.inputext_al_num_2:focus{
+    border: 2px solid #000000;
+}
+
+.boton{
+    display: flex;
+}
+  
+.botones{
+    width: 40%;
+    margin: auto;
+    background: #1444c7d7;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+  .botones:hover{
+    background: #1379a8c7;
+    color: #ffffff;
+  }

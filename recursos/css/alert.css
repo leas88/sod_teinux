@@ -1,0 +1,38 @@
+.alert{
+  position: absolute;
+  top: 10px;
+  right: -100%;
+  width: 30%;
+  background: #ccc;
+  padding: 25px;
+  border-radius: 5px 0 0 5px;
+
+  box-shadow: 0 0 4px #000;
+  transition: all .3s ease;
+}
+
+.alert.show{
+  right: 0;
+}
+
+.alert.alert-info{
+  background: #3498db;
+}
+
+.alert.alert-warning{
+  background: #fc3f27;
+}
+
+.alert.alert-error{
+  background: #e74c3c;
+}
+
+.alert.alert-info p,
+.alert.alert-warning p,
+.alert.alert-error p{
+  color: #fff;
+}
+
+.alert p{
+  font-size: 20px;
+}
