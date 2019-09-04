@@ -22,12 +22,14 @@ frmAlumnMod.addEventListener('submit', function(e){
     })
         .then( res=> res.json())
         .then( data=> {
+          console.log(data);
           if(data==='pase'){
             alertNotify('info', 'Datos Modificados.')
-            setTimeout(function(){a()},2000)
+            
+            //setTimeout(function(){a()},2000)
           }else{
             alertNotify('error', 'Error al Modificar.')
-            setTimeout(function(){a()},2000);
+            //setTimeout(function(){a()},2000);
           }
         })
   }

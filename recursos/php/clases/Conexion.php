@@ -26,9 +26,9 @@
   }
 
   $hostnames="localhost";
-  $databases="id9756636_proyectofinal";
-  $usernames="id9756636_es162005431";
-  $passwords="ES162005431";
+  $databases="escuela_sodoma";
+  $usernames="root";
+  $passwords="";
 
   $conexion=mysqli_connect($hostnames,$usernames,$passwords,$databases);
 

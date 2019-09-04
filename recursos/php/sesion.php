@@ -11,7 +11,7 @@
    * Conexion a la base de datos
    */
   //$con = new Conexion('localhost','teinux','root','');
-  $con = new Conexion('localhost','id9756636_proyectofinal','id9756636_es162005431','ES162005431');
+  $con = new Conexion('localhost','escuela_sodoma','root','');
   $conexion = $con->conectar();
   /**
    * Consulta SQL

@@ -11,7 +11,14 @@
     $correo = $_POST['correo2'];
 
     include 'clases/Conexion.php';
+    include 'validaciones/validaAlumno.php';
 
+    $validaAlumno = new validaAlumno();
+    $validaAlumno->setDatos($_POST);//Le envia los datos a validar
+    $array = ['idalumnos'=>'']; 
+    $validaAlumno->setValidaciones([]);
+    $validaAlumno->ejecutaValidaciones();
+    echo '<pr>' .$validaAlumno->getValidacione() . 'HOla</pr>' ;
     $update="UPDATE alumnos SET nombre='".$nombre."', apellidop='".$apellidop."', apellidom='".$apellidom."', 
         ciudad='".$ciudad."', sexo='".$sexo."', edad='".$edad."', telefono='".$telefono."', correo='".$correo."' 
         WHERE id_alumnos='".$idalumnos."' ";
