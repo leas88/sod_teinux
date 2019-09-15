@@ -23,12 +23,12 @@ frmAlumnMod.addEventListener('submit', function(e){
         .then( res=> res.json())
         .then( data=> {
           console.log(data);
-          if(data==='pase'){
+          if(data['pase']==1){
             alertNotify('info', 'Datos Modificados.')
             
             //setTimeout(function(){a()},2000)
           }else{
-            alertNotify('error', 'Error al Modificar.')
+            alertNotify('error', data['messages'])
             //setTimeout(function(){a()},2000);
           }
         })

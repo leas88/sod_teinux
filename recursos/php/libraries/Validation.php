@@ -1,29 +1,10 @@
 <?php
-include 'language/form_validation_lang.php';
-class Validaciones {
-    
-    private $message ;
-    public function __construct() {
-        
-        $language =   new form_validation_lang();
-        $this->message =   $language->getMessage();
-        //print_r( $this->message);
-    }
 
-    /*
-     *$keyMessage Llave del mensaje solicitado
-        retorna el mensaje solicitado, si existe en el listado de validaciones
-     */
-    public function getMessageLanguage($keyMessage, $field = null){
-        if(!is_null($keyMessage) && isset($this->message["form_validation_".$keyMessage])){
-            $message  = $this->message["form_validation_".$keyMessage];
-            if(!is_null($field)){
-                return str_replace("{field}", $field, $message);
-            }
-            return $this->message["form_validation_".$keyMessage];
-        }else{
-            return null;
-        }
+class Validation {
+    
+    
+    public function __construct() {
+		
     }
 
 
