@@ -3,12 +3,12 @@ $alumnosVal = array(
         [
             'fieldKey'=>'nombre2',
             'fieldText'=>'Nombre',
-            'rules' =>'max_length[8]',
+            'rules' =>'alpha_accent_space',
         ],
         [
             'fieldKey'=>'telefono2',
             'fieldText'=>'Teléfono',
-            'rules' =>'required',
+            'rules' =>'required|max_length[10]',
         ],
         [
             'fieldKey'=>'correo2',
@@ -16,3 +16,4 @@ $alumnosVal = array(
             'rules' =>'required|valid_email',
         ]
 );
+

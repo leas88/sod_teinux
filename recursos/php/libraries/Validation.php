@@ -50,39 +50,39 @@ class Validation {
 	}
     
     public function alpha_accent_space($str) {
-        $exp = '/^[\p{L}- ]*$/u';
+        $exp = '/^[\p{L}\- ]*$/u';
         return (!preg_match($exp, $str)) ? FALSE : TRUE;
     }
 
     public function alpha_numeric_accent_space($str) {
-        $exp = '/^[\p{L}-0123456789 ]*$/u';
+        $exp = '/^[\p{L}\-0123456789 ]*$/u';
         return (!preg_match($exp, $str)) ? FALSE : TRUE;
     }
 
     public function alpha_numeric_accent_space_dot($str) {
-        $exp = '/^[\p{L}-0123456789,. \s]*$/u';
+        $exp = '/^[\p{L}\-0123456789,. \s]*$/u';
         return (!preg_match($exp, $str)) ? FALSE : TRUE;
     }
 
     /**/
 
     public function alpha_accent_space_dot_quot($str) {
-        $exp = '/^[\p{L}-,.\s]*$/u';
+        $exp = '/^[\p{L}\-,.\s]*$/u';
         return (!preg_match($exp, $str)) ? FALSE : TRUE;
     }
 
     public function alpha_numeric_accent_slash($str) {
-        $exp = '/^[\p{L}-0123456789.\/]*$/u';
+        $exp = '/^[\p{L}\-0123456789.\/]*$/u';
         return (!preg_match($exp, $str)) ? FALSE : TRUE;
     }
 
     public function alpha_numeric_accent_space_dot_parent($str) {
-        $exp = '/^[\p{L}-0123456789,.:\(\)\/\s]*$/u';
+        $exp = '/^[\p{L}\-0123456789,.:\(\)\/\s]*$/u';
         return (!preg_match($exp, $str)) ? FALSE : TRUE;
     }
 
     public function alpha_numeric_accent_space_dot_double_quot($str) {
-        $exp = '/^[\p{L}-0123456789,.:\(\)\/\s]*$/u';
+        $exp = '/^[\p{L}\-0123456789,.:\(\)\/\s]*$/u';
         //$exp = '/^[\p{L}-0123456789,.:;\'\"\(\)\/\s]*$/u';
         return (!preg_match($exp, $str)) ? FALSE : TRUE;
     }
